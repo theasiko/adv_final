@@ -42,7 +42,7 @@ Description of the ML/DL models
 In our project, we used convolutional neural networks (CNNs), a powerful class of deep learning models, to solve the problem of body size estimation for online shopping. CNNs are particularly well suited for image analysis tasks due to their ability to automatically learn hierarchical representations of visual features. 
 
  
-	Conv2D layers perform convolution operations on input images, applying learnable filters to extract spatial features. We used multiple Conv2D layers to progressively capture increasingly abstract features from the input images.     
+Conv2D layers perform convolution operations on input images, applying learnable filters to extract spatial features. We used multiple Conv2D layers to progressively capture increasingly abstract features from the input images.     
 
  MaxPooling2D, following each Conv2D layer, we incorporated MaxPooling2D layers to down sample the feature maps, reducing spatial dimensions while retaining the most relevant information. 
 
