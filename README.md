@@ -35,7 +35,7 @@ Information about the data
 
 For this research, a comprehensive dataset was meticulously compiled from diverse online retail platforms, encompassing a spectrum of consumer reviews. Specifically, the dataset comprises photographs depicting women's reviews across a range of apparel sizes, including XS, S, M, L, and XL. Each size category was systematically represented by a collection of 50 meticulously curated photographs, meticulously selected to ensure a balanced and representative sample. Hence, we have collected 250 photos in total. Moreover, to standardize the dataset and facilitate consistent analysis, all images were uniformly cropped to adhere to a 3:4 aspect ratio. 
 
-![(Pic 1-2. Example of data for training)]([url](https://github.com/theasiko/adv_final/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-03-06%20205034.png?raw=true)https://github.com/theasiko/adv_final/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-03-06%20205034.png?raw=true)
+![(Pic 1-2. Example of data for training)](https://github.com/theasiko/adv_final/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-03-06%20205034.png)
 Description of the ML/DL models 
 
 In our project, we used convolutional neural networks (CNNs), a powerful class of deep learning models, to solve the problem of body size estimation for online shopping. CNNs are particularly well suited for image analysis tasks due to their ability to automatically learn hierarchical representations of visual features. 
