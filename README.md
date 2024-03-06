@@ -35,3 +35,23 @@ Information about the data
 
 For this research, a comprehensive dataset was meticulously compiled from diverse online retail platforms, encompassing a spectrum of consumer reviews. Specifically, the dataset comprises photographs depicting women's reviews across a range of apparel sizes, including XS, S, M, L, and XL. Each size category was systematically represented by a collection of 50 meticulously curated photographs, meticulously selected to ensure a balanced and representative sample. Hence, we have collected 250 photos in total. Moreover, to standardize the dataset and facilitate consistent analysis, all images were uniformly cropped to adhere to a 3:4 aspect ratio. 
 
+![(Pic 1-2. Example of data for training)]([url](https://github.com/theasiko/adv_final/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-03-06%20205034.png?raw=true)https://github.com/theasiko/adv_final/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-03-06%20205034.png?raw=true)
+Description of the ML/DL models 
+
+In our project, we used convolutional neural networks (CNNs), a powerful class of deep learning models, to solve the problem of body size estimation for online shopping. CNNs are particularly well suited for image analysis tasks due to their ability to automatically learn hierarchical representations of visual features. 
+
+ 
+	Conv2D layers perform convolution operations on input images, applying learnable filters to extract spatial features. We used multiple Conv2D layers to progressively capture increasingly abstract features from the input images.     
+
+ MaxPooling2D, following each Conv2D layer, we incorporated MaxPooling2D layers to down sample the feature maps, reducing spatial dimensions while retaining the most relevant information. 
+
+Once the feature maps were sufficiently processed, we flattened them into a vector format using the Flatten layer, preparing the data for input into densely connected layers. 
+
+Fully connected layers received the flattened feature vectors as input and performed classification based on the learned features. We utilized Dense layers with activation functions to produce the final output predictions. 
+
+During the training process, we monitored the performance of our model on both the training and validation datasets. We recorded training and validation metrics, such as loss and accuracy, and stored them in log files for analysis. This allowed us to track the progress of the model's training and identify potential issues, such as overfitting. 
+
+To prevent overfitting, we employed early stopping, a technique where training is halted if the performance on the validation dataset fails to improve for a certain number of epochs. This helps ensure that the model generalizes well to unseen data and avoids memorizing the training examples. 
+
+Furthermore, we organized our data into batches and split them into training, validation, and test sets. This allowed us to efficiently train the model on mini-batches of data, validate its performance on unseen data, and finally evaluate its effectiveness on a separate test set, ensuring the robustness of our approach. Our neural network was specifically used in the process of analyzing uploaded data to website: when uploading photo, when network analyze it, and giving back results with the most suitable size. 
+
